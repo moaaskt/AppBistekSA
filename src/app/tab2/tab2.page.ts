@@ -11,7 +11,7 @@ export class Tab2Page {
     nome: '',
     imagem: '',
     preco: 0,
-    quantidade: 0 
+    quantidade: ''
   };
 
   produtos = [];
