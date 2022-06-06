@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+     Cadastro de Produtos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+
+<ion-item>
+<ion-label position="stacked">Nome</ion-label>
+<ion-input [(ngModel)]="produto.nome" type="text"></ion-input>
+</ion-item>
+
+<ion-item>
+<ion-label position="stacked">Imagem</ion-label>
+<ion-input [(ngModel)]="produto.imagem" type="text"></ion-input>
+</ion-item>
+
+<ion-item>
+<ion-label position="stacked">Preço</ion-label>
+<ion-input [(ngModel)]="produto.preco" type="number"></ion-input>
+</ion-item>
+
+<ion-item>
+<ion-label position="stacked">Quantidade</ion-label>
+<ion-input [(ngModel)]="produto.quantidade" type="number"></ion-input>
+</ion-item>
+
+<ion-grid>
+<ion-button (click)="criar()" expand="block"  color="danger" >Cadastrar</ion-button>
+
+
+</ion-grid>
+
+
+
+
+
+
+</ion-content>

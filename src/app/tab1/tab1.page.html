@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <a href="https://imgbb.com/"
+        ><img
+          src="https://i.ibb.co/XCNytVd/logo-bistek-removebg-preview.png"
+          alt="logo-bistek-removebg-preview"
+      /></a>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-list *ngFor="let produto of produtos">
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src={{produto.imagem}}/>
+      </ion-avatar>
+      <ion-label>
+        <h2>{{produto.nome}}</h2>
+        <h3>Preço:R${{produto.preco}}</h3>
+        <p>Quantidade: {{produto.quantidade}}</p>
+        <p>Valor Total: {{ produto.valorT }}
+      </ion-label>
+      <ion-avatar slot="end" class="icons">
+      <i class="fa-solid fa-trash" (click)="delete(produto)"></i>
+      <i class="fa-solid fa-cart-arrow-down" (click)="addCart(produto)"></i>
+    </ion-avatar>
+    </ion-item>
+  </ion-list>
+</ion-content>
