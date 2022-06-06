@@ -22,8 +22,8 @@
         <p>Valor Total: {{ produto.valorT }}
       </ion-label>
       <ion-avatar slot="end" class="icons">
-      <i class="fa-solid fa-trash" (click)="delete(produto)"></i>
-      <i class="fa-solid fa-cart-arrow-down" (click)="addCart(produto)"></i>
+      <i class="fa-solid fa-trash" title="Excluir Produto" (click)="delete(produto)"></i>
+      <i class="fa-solid fa-cart-arrow-down" title="Adicionar Produto ao carrinho" (click)="addCart(produto)"></i>
     </ion-avatar>
     </ion-item>
   </ion-list>

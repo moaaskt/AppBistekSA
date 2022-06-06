@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  // valorT = [];
+
   produtos = [];
   carrinho = [];
   constructor() {}
@@ -25,38 +25,17 @@ export class Tab1Page {
         imagem: produto.imagem,
         preco: produto.preco,
         quantidade: produto.quantidade,
-        valor : produto.valor,
      
       };
       console.log(this.produtos.indexOf(produto));
       this.carrinho.push(Object.assign({}, produtoCarrinho));
-      produto.quantidade += 1;
+      produto.quantidade -= 1;
      
       localStorage.setItem('carrinho', JSON.stringify(this.carrinho));
       localStorage.setItem('produtos', JSON.stringify(this.produtos));
     }
   }
 
-// valorTotal(produto){
-
-// let valorT = produto.quantidade * produto.preco;
-
-  
-
-// }
-
-
-
-
-// valorT(produto){
-//   if(produto.quantidade == 1){
-
-//     this.produto.quantidade * produto.preco;
-
-// //   }
-
-
-// }
 
   delete(produto) {
     this.produtos.splice(this.produtos.indexOf(produto), 1);
