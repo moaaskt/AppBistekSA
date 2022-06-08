@@ -6,7 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['tab1.page.scss'],
 })
 export class Tab1Page {
-
+  slideOpts = {
+    initialSlide: 1,
+    speed: 400
+  };
 
   produtos = [];
   carrinho = [];
