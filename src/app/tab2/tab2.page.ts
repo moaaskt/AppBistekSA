@@ -18,6 +18,17 @@ export class Tab2Page {
 
   constructor() {}
 
+
+  // async presentToast() {
+  //   const toast = await this.toastController.create({
+  //     message: 'Your settings have been saved.',
+  //     duration: 2000
+  //   });
+  //   toast.present();
+  // }
+
+
+  
   // ngOnInit() { // executado ao carregar a tela
   //   this.produtos = JSON.parse(localStorage.getItem('produtos'));
   // }
