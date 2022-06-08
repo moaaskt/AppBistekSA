@@ -1,8 +1,11 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-     Cadastro de Produtos
+     Cadastro de Produtos      <ion-icon name="pricetags"></ion-icon>
     </ion-title>
+
+
+  
   </ion-toolbar>
 </ion-header>
 
@@ -17,12 +20,12 @@
 
 <ion-item>
 <ion-label position="stacked">Imagem</ion-label>
-<ion-input [(ngModel)]="produto.imagem" type="text"></ion-input>
+<ion-input placeholder="Link da imagem" [(ngModel)]="produto.imagem" type="text"></ion-input>
 </ion-item>
 
 <ion-item>
 <ion-label position="stacked">Preço</ion-label>
-<ion-input [(ngModel)]="produto.preco" type="number"></ion-input>
+<ion-input [(ngModel)]="produto.preco" type="number">R$</ion-input>
 </ion-item>
 
 <ion-item>
@@ -32,7 +35,7 @@
 
 <ion-grid>
 <ion-button (click)="criar()" expand="block"  color="danger" >Cadastrar</ion-button>
-
+<p>*Insira o nome do Produto junto com a o link da imagem e seu respectivo valor, a quantidade você decide</p>
 
 </ion-grid>
 

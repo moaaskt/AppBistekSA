@@ -1,10 +1,19 @@
 
-ion-title{
-  margin: 0;
-  padding: 10px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
+
 ion-button{
   font-family: monospace;
   font-style: oblique;
+}
+ion-title{
+  color: black;
+font-style: normal;
+font-family: monospace;
+font-weight:bold;
+align-items: center;
+padding:13px;
+font-size: 1.5rem;
+}
+p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
 }
