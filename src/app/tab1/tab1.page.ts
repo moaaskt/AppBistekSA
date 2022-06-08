@@ -20,6 +20,9 @@ export class Tab1Page {
   }
 
   addCart(produto) {
+
+
+    confirm("Tem certeza Disso?");
     if (produto.quantidade == 0) {
       return;
     } else {
