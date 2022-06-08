@@ -7,8 +7,15 @@
 </ion-header>
 
 <ion-content>
-<!-- <h3>Preço:R${{produto.preco}}</h3>
 
-<h2>{{ carrinho }}</h2> -->
+<ion-content>
+<ion-list  inset>
+<button  ion-item *ngFor="let item of items" (click)="SelecionarItem(item)">
+  {{item}}
+</button>
+</ion-list>
+</ion-content>
+
+
 
 </ion-content>

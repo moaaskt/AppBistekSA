@@ -6,10 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['tab3.page.scss'],
 })
 export class Tab3Page {
-  produtos = [];
-  carrinho = [];
+  carrinho: any;
+  produtos: any;
+
+   produtoCarrinho: any;
 
   ionViewDidEnter() {
     this.carrinho = JSON.parse(localStorage.getItem('carrinho'));
+  }
+
+
+  SelecionarProduto(item:  string) {
+    this.carrinho.push(Tab3Page, {produtos:  item});
   }
 }
