@@ -11,6 +11,9 @@ export class Tab1Page {
     speed: 400
   };
 
+
+  // resultado = confirm("Tem certeza disso?");
+
   produtos = [];
   carrinho = [];
   constructor() {}
@@ -21,11 +24,13 @@ export class Tab1Page {
 
   addCart(produto) {
 
+    
 
-    confirm("Tem certeza Disso?");
+    
     if (produto.quantidade == 0) {
       return;
-    } else {
+    } else
+    {
       let produtoCarrinho = {
         nome: produto.nome,
         imagem: produto.imagem,
@@ -36,6 +41,7 @@ export class Tab1Page {
       console.log(this.produtos.indexOf(produto));
       this.carrinho.push(Object.assign({}, produtoCarrinho));
       produto.quantidade -= 1;
+      confirm("Tem certeza Disso?");
      
       localStorage.setItem('carrinho', JSON.stringify(this.carrinho));
       localStorage.setItem('produtos', JSON.stringify(this.produtos));
