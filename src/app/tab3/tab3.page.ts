@@ -11,6 +11,10 @@ export class Tab3Page {
 
    produtoCarrinho: any;
 
+
+
+
+   
   ionViewDidEnter() {
     this.carrinho = JSON.parse(localStorage.getItem('carrinho'));
   }
