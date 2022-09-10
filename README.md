@@ -4,7 +4,7 @@
 
 
 
-<h1 align="center"> Aplicativo delivery feito em ionic 5 </h1>
+<h1 align="center"> Aplicativo delivery ionic 5 </h1>
 
 <p align="center">
 <a href="#sobre">Sobre </a>|
