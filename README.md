@@ -1,6 +1,22 @@
-# Aplicativo delivery feito em ionic 5 (trabalho SA)
 
-Trabalho avaliativo do Senai, feito em grupo.Fiquei responsável pela parte de cadastro de produtos e design.
-O app não ficou totalmente pronto por falta de compromisso dos "colegas", mas a minha parte está ai! hahahahaha :)
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/ionic-5-angular-10-start-template-l4q8qb)
+
+
+
+
+<h1 align="center"> Aplicativo delivery feito em ionic 5 </h1>
+
+<p align="center">
+<a href="#sobre">Sobre </a>|
+<a href="#sobre">Tecnologias </a>|
+<a href="#sobre">Autor</a>
+</p>
+
+<br>
+
+
+<h4 align="center">
+<g-emoji class="g-emoji" alias="hammer_and_wrench" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6e0.png">🛠</g-emoji> Projeto README em construção ... 
+
+</h4>
+
