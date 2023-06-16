@@ -6,21 +6,25 @@ import { Component } from '@angular/core';
   styleUrls: ['tab3.page.scss'],
 })
 export class Tab3Page {
-  carrinho: any;
-  produtos: any;
+  carrinho: any[] = [];
+  quantidadeTotal: number = 0;
+  valorTotal: number = 0;
 
-   produtoCarrinho: any;
-
-
-
-
-   
   ionViewDidEnter() {
-    this.carrinho = JSON.parse(localStorage.getItem('carrinho'));
+    const carrinhoData = localStorage.getItem('carrinho');
+    this.carrinho = carrinhoData ? JSON.parse(carrinhoData) : [];
+    this.calcularTotais();
   }
 
+  calcularTotais() {
+    this.quantidadeTotal = this.carrinho.reduce((total, produto) => total + produto.quantidade, 0);
+    this.valorTotal = this.carrinho.reduce((total, produto) => total + (produto.preco * produto.quantidade), 0);
+  }
 
-  SelecionarProduto(item:  string) {
-    this.carrinho.push(Tab3Page, {produtos:  item});
+  finalizarCompra() {
+    // Lógica para finalizar a compra, como enviar o pedido para o servidor, limpar o carrinho, etc.
+    this.carrinho = [];
+    localStorage.removeItem('carrinho');
+    this.calcularTotais();
   }
 }

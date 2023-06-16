@@ -6,10 +6,25 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding class="background">
+<ion-content>
+<ion-list>
+  <ion-item *ngFor="let produto of carrinho">
+    <ion-thumbnail slot="start">
+      <img [src]="produto.imagem" alt="Imagem do produto">
+    </ion-thumbnail>
+    <ion-label>
+      <h2>{{ produto.nome }}</h2>
+      <p>Preço: {{ produto.preco }}</p>
+      <p>Quantidade: {{ produto.quantidade }}</p>
+    </ion-label>
+  </ion-item>
+</ion-list>
 
-
-
+<div class="total-container">
+  <p>Quantidade Total: {{ quantidadeTotal }}</p>
+  <p>Valor Total: {{ valorTotal }}</p>
+  <button ion-button (click)="finalizarCompra()">Finalizar Compra</button>
+</div>
 </ion-content>
 
 
