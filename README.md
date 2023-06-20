@@ -6,7 +6,8 @@
 
 <h1 align="center"> Aplicativo delivery ionic 5 </h1>
 
-<p align="center"><a  href="https://ibb.co/6BG0GjT"><img src="https://i.ibb.co/sHc9c8N/bistek.jpg" alt="bistek" border="0"></a><br /><br />
+<p align="center" >
+<a align="center" href="https://gifyu.com/image/SQmYv"><img src="https://s12.gifyu.com/images/SQmYv.gif" alt="SQmYv.gif" border="0" /></a>
 
 <p align="center">
 <a href="#sobre">Sobre </a>|
